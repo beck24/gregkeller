@@ -1,0 +1,15 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: open_new_tab
+        field:
+          inline_label: 'Open link in a new tab?'
+          default: false
+          display: 'Open in new tab?'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible

@@ -10,36 +10,78 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: sections
         field:
-          always_show_set_button: false
+          collapse: false
           previews: true
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - table
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          antlers: false
-          display: Content
-          type: bard
-          icon: bard
+          sets:
+            section:
+              display: Section
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - bold
+                      - underline
+                      - italic
+                      - strikethrough
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    display: Content
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: images
+                  field:
+                    mode: list
+                    container: files
+                    folder: images
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Images
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: Sections
+          type: replicator
+          icon: replicator
+          instructions: 'Handle the text/image content for defined templates'
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -51,4 +93,31 @@ sections:
         field:
           type: slug
           localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          blueprint: false
+          folder: templates/pages
+          display: Template
+          type: template
+          icon: template
+          instructions: 'The template'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
 title: Pages
