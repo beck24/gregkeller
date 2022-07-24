@@ -26,4 +26,8 @@
     .viner {
         font-family: Viner;
     }
+
+    .wysiwyg p {
+        padding-bottom: 1rem;
+    }
 }
