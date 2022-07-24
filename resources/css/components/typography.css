@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Noto+Sans&display=swap');
 
+@font-face{
+    font-family: 'Viner';
+    src: url('/fonts/VINERITC.TTF');
+}
+
+:root {
+    --footer-height: 150px;
+}
+
 @layer components {
+
     body {
-        @apply text-white text-base;
+        @apply relative text-white text-base;
         font-family: 'Noto Sans', sans-serif;
+        min-height: 100vh;
+        padding-bottom: var(--footer-height);
+    }
+
+    footer {
+        @apply absolute w-full bottom-0 flex flex-col justify-center text-xs lg:text-sm;
+        height: var(--footer-height);
+    }
+
+    .viner {
+        font-family: Viner;
     }
 }

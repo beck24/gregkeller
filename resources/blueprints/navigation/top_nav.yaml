@@ -13,3 +13,13 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: button_style
+        field:
+          default: false
+          display: 'Button Style'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible

@@ -48,51 +48,18 @@
         
     </head>
     <body class="bg-black text-white">
+        {{ partial:partials/header }}
+
         <main class="main_content">
-            <div class="bg-gray-700 py-2">
-                <div class="flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto px-9 overflow-hidden">
-                    <div class="flex items-center gap-4">
-                        <a href="tel:+12507138509" class="text-sm whitespace-nowrap overflow-ellipsis">
-                            <i class="fa-solid fa-phone"></i>
-                            250-713-8509
-                        </a>
-
-                        <a href="mailto:electgregkeller@gmail.com" class="text-sm whitespace-nowrap overflow-ellipsis">
-                            <i class="fa-solid fa-envelope"></i>
-                            electgregkeller@gmail.com
-                        </a>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <a href="https://www.facebook.com/electgregkeller" aria-title="Facebook" class="text-3xl">
-                            <i class="fa-brands fa-facebook-square"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/gregbkeller/" aria-title="Facebook" class="text-3xl">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-between items-center w-full max-w-7xl mx-auto px-9 py-2">
-                <div>
-                    <div class="text-primary text-3xl">Re-Elect</div>
-                    <h1 class="text-6xl">Greg Keller</h1>
-                    <h2 class="text-3xl">For School District Trustee</h2>
-                </div>
-
-                <div class="flex items-center gap-4 text-2xl">
-                    {{ nav:top_nav }}
-                        <a href="{{ url }}"
-                        {{ if open_new_tab }}target="_blank"{{ /if }}
-                        class="{{ if is_current }} text-primary {{ /if }}"
-                        >{{ title }}</a>
-                    {{ /nav:top_nav }}
-                </div>
-            </div>
-
             {{ template_content }}
         </main>
+
+        <footer class="bg-gray-800 py-6">
+            <div class="w-full max-w-7xl mx-auto px-9">
+                <div>Copyright © {{ date format="Y" }} Greg Keller for SD68 Trustee.</div>
+                <div>Website by <a href="https://portfolio.mattbeckett.me" class="text-primary">Matt Beckett</a></div>
+                <div>Authorized By Greg Keller Financial Agent (250) 713-850</div>
+            </div>
+        </footer>
     </body>
 </html>

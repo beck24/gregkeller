@@ -1,12 +1,42 @@
-<div>
-    <h1>Homepage</h1>
-    <h2>Here</h2>
-    <p>With text</p>
-
-    {{ sections }}
-        <h2>{{ title }}</h2>
-        <div>
-            {{ content }}
+{{ sections.0 }}
+<div class="w-full bg-black border-b border-gray-600">
+    <div class="flex flex-col lg:flex-row items-center w-full max-w-7xl mx-auto gap-6 px-9">
+        <div class="py-6 lg:py-0">
+            <img src="{{ images.0.url }}" alt="Greg Keller" class="inline-block">
         </div>
-    {{ /sections }}
+
+        <div class="w-full text-center">
+            <h2 class="viner text-5xl xl:text-7xl">{{ title }}</h2>
+            <div class="pt-6 text-xl xl:text-2xl">
+                {{ content }}
+            </div>
+        </div>
+    </div>
 </div>
+{{ /sections.0 }}
+
+
+{{ sections.1 }}
+<div class="w-full">
+    <div class="w-full max-w-7xl mx-auto px-9 flex flex-col lg:flex-row gap-6 py-4 items-center">
+        <div class="w-full lg:max-w-[40%] xl:max-w-[30%]">
+            <img src="{{ images.0.url }}" alt="" class="w-full">
+        </div>
+
+        <div class="w-full">
+            <h2 class="text-secondary text-3xl">{{ title }}</h2>
+
+            <div class="pt-2">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ /sections.1 }}
+
+
+{{ sections.2 }}
+<div class="w-full max-w-7xl px-9 mx-auto py-8">
+    <img src="{{ images.0.url }}" alt="Greg Keller for SD68 School Board Trustee" class="w-full">
+</div>
+{{ /sections.2 }}

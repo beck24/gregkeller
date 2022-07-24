@@ -20,3 +20,4 @@ tree:
     url: 'https://gofund.me/62e2e296'
     data:
       open_new_tab: true
+      button_style: true
