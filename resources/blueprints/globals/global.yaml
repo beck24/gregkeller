@@ -1,0 +1,9 @@
+sections:
+  main:
+    display: Main
+    fields: {  }
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo

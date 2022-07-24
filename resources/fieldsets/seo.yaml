@@ -1,0 +1,42 @@
+title: SEO
+fields:
+  -
+    handle: seo_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'SEO Title'
+      type: text
+      icon: text
+      instructions: 'Title of the page, as well as title of all shared social media tags'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: seo_description
+    field:
+      antlers: false
+      display: 'SEO Description'
+      type: textarea
+      icon: textarea
+      instructions: 'Description of the page'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: seo_image
+    field:
+      mode: list
+      container: files
+      folder: images
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'SEO Image'
+      type: assets
+      icon: assets
+      instructions: 'The preview image for the page'
+      listable: hidden
+      instructions_position: above
+      visibility: visible

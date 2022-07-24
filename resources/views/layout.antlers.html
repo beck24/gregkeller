@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ seo_title ?? global.seo_title }}</title>
+
+        <meta name="title" content="{{ seo_title ?? global.seo_title }}">
+        <meta name="description" content="{{ seo_description ?? global.seo_description }}">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ current_url }}">
+        <meta property="og:title" content="{{ seo_title ?? global.seo_title }}">
+        <meta property="og:description" content="{{ seo_description ?? global.seo_description }}">
+        
+        {{ if seo_image }}
+            <meta property="og:image" content="{{ seo_image.url }}">
+        {{ elseif global.seo_image }}
+            <meta property="og:image" content="{{ global.seo_image.url }}">
+        {{ /if }}
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:url" content="{{ current_url }}">
+        <meta property="twitter:title" content="{{ seo_title ?? global.seo_title }}">
+        <meta property="twitter:description" content="{{ seo_description ?? global.seo_description }}">
+
+        {{ if seo_image }}
+            <meta property="twitter:image" content="{{ seo_image.url }}">
+        {{ elseif global.seo_image }}
+            <meta property="twitter:image" content="{{ global.seo_image.url }}">
+        {{ /if }}
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <script defer src="/js/alpinejs.min.js"></script>
+
+        <!-- Styles -->
+        <link href="{{ mix src="/css/app.css" }}" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main class="main_content">
+            {{ template_content }}
+        </main>
+    </body>
+</html>
