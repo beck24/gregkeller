@@ -1,0 +1,26 @@
+{{ sections.0 }}
+<div class="w-full max-w-7xl mx-auto px-9 py-6">
+    {{ if title }}
+        <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
+    {{ /if }}
+
+    <div class="wysiwyg">
+        {{ content }}
+    </div>
+</div>
+{{ /sections.0 }}
+
+{{ sections offset="1" }}
+<div class="w-full max-w-7xl mx-auto px-9 py-6" x-data="{open: false}">
+    <h2 class="text-primary" class="text-2xl">
+        <button type="button" @click="open = !open">
+            <i class="fa-solid" :class="{ 'fa-circle-plus': !open, 'fa-circle-minus': open }"></i>
+            {{ title }}
+        </button>
+    </h2>
+
+    <div class="wysiwyg" :class="{ hidden: !open }">
+        {{ content }}
+    </div>
+</div>
+{{ /sections }}

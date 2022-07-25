@@ -1,0 +1,120 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Your Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: address2
+        field:
+          input_type: text
+          antlers: false
+          display: Address2
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: city
+        field:
+          input_type: text
+          antlers: false
+          display: City
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: province
+        field:
+          input_type: text
+          antlers: false
+          display: Province
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: postal_code
+        field:
+          input_type: text
+          antlers: false
+          display: 'Postal Code'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: country
+        field:
+          input_type: text
+          antlers: false
+          display: Country
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: 'Your Email'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+            - email
+      -
+        handle: how_to_help
+        field:
+          antlers: false
+          display: 'How would you like to help?'
+          type: textarea
+          icon: textarea
+          instructions: '(host a lawn sign, hand out promotional materials, research, organize an event, host a gathering, donate, networking, etc)'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

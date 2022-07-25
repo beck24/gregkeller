@@ -1,23 +1,23 @@
 <div class="bg-gray-700 py-2 border-b border-gray-400">
     <div class="flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto px-9 overflow-hidden">
         <div class="flex items-center gap-4">
-            <a href="tel:+12507138509" class="text-sm whitespace-nowrap overflow-ellipsis">
+            <a href="tel:+12507138509" class="text-sm text-white whitespace-nowrap overflow-ellipsis">
                 <i class="fa-solid fa-phone"></i>
                 250-713-8509
             </a>
 
-            <a href="mailto:electgregkeller@gmail.com" class="text-sm whitespace-nowrap overflow-ellipsis">
+            <a href="mailto:electgregkeller@gmail.com" class="text-sm text-white whitespace-nowrap overflow-ellipsis">
                 <i class="fa-solid fa-envelope"></i>
                 electgregkeller@gmail.com
             </a>
         </div>
 
         <div class="flex items-center gap-4">
-            <a href="https://www.facebook.com/electgregkeller" aria-title="Facebook" class="text-3xl">
+            <a href="https://www.facebook.com/electgregkeller" aria-title="Facebook" class="text-3xl text-white">
                 <i class="fa-brands fa-facebook-square"></i>
             </a>
 
-            <a href="https://www.instagram.com/gregbkeller/" aria-title="Facebook" class="text-3xl">
+            <a href="https://www.instagram.com/gregbkeller/" aria-title="Facebook" class="text-3xl text-white">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
@@ -34,15 +34,24 @@
 
         <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 text-lg lg:text-xl pt-6 lg:pt-0">
             {{ nav:top_nav }}
+                {{ if button_style }}
                 <a href="{{ url }}"
-                {{ if open_new_tab }}target="_blank"{{ /if }}
-                class="
-                whitespace-nowrap
-                text-white
-                {{ if is_current }} text-primary {{ /if }}
-                {{ if button_style }} bg-primary hover:bg-white rounded text-gray-700 hover:text-black px-4 py-2 border border-primary{{ /if }}
-                "
-                >{{ title }}</a>
+                    {{ if open_new_tab }}target="_blank"{{ /if }}
+                    class="
+                    whitespace-nowrap bg-primary hover:bg-white rounded text-gray-700 hover:text-black px-4 py-2 border border-primary
+                    {{ if is_current }} text-black {{ /if }}
+                    "
+                    >{{ title }}</a>
+                {{ else }}
+                <a href="{{ url }}"
+                    {{ if open_new_tab }}target="_blank"{{ /if }}
+                    class="
+                    whitespace-nowrap
+                    text-white
+                    {{ if is_current }} text-primary {{ /if }}
+                    "
+                    >{{ title }}</a>
+                {{ /if }}
             {{ /nav:top_nav }}
         </div>
     </div>

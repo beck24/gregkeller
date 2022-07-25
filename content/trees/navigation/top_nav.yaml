@@ -15,9 +15,7 @@ tree:
     id: 22204431-11da-4318-a34c-6415e84842b0
     entry: 7a22aeb3-b06e-4101-a8a4-cd2578109105
   -
-    id: 7ab91180-2aaf-4757-b191-5ff42aa2688d
-    title: Donate
-    url: 'https://gofund.me/62e2e296'
+    id: 18368798-30b8-4ac3-ad2d-08d248b7d344
+    entry: 34459d89-d1de-46a1-a503-61f491525c48
     data:
-      open_new_tab: true
       button_style: true

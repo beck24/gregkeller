@@ -1,0 +1,18 @@
+{{ sections.0 }}
+<div class="w-full max-w-7xl mx-auto px-9 py-6">
+    {{ if title }}
+        <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
+    {{ /if }}
+
+    <div class="w-full flex flex-col lg:flex-row gap-6 items-center">
+        <div class="w-full wysiwyg">
+            {{ content }}
+        </div>
+
+        <div class="w-full p-6 rounded-lg bg-white">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/reelect-greg-keller-for-school-district-trustee/widget/large/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+        </div>
+    </div>
+    
+</div>
+{{ /sections.0 }}
