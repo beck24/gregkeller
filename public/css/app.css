@@ -665,15 +665,15 @@ video {
 }.text-primary{
   --tw-text-opacity: 1;
   color: rgb(255 192 0 / var(--tw-text-opacity));
+}.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }.text-secondary{
   --tw-text-opacity: 1;
   color: rgb(0 242 222 / var(--tw-text-opacity));
 }.text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
-}.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }.underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -686,7 +686,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }@font-face{
     font-family: 'Viner';
-    src: url('/fonts/VINERITC.TTF');
+    src: url('/fonts/VINERITC.ttf');
 }:root {
     --footer-height: 150px;
 }.hover\:bg-white:hover{
