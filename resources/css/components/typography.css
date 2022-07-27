@@ -35,8 +35,28 @@
         @apply list-decimal list-outside pl-12;
     }
 
+    .wysiwyg ul {
+        @apply list-disc list-outside pl-12;
+    }
+
     .wysiwyg strong {
         @apply font-bold;
+    }
+
+    .wysiwyg h2 {
+        @apply text-3xl font-bold;
+
+        color: inherit;
+    }
+
+    .wysiwyg h3 {
+        @apply text-2xl font-bold;
+    }
+
+    .wysiwyg h4 {
+        @apply text-xl font-bold;
+
+        color: inherit;
     }
 
     a {

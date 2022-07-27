@@ -1,23 +1,35 @@
-{{ sections.0 }}
-<div class="w-full max-w-7xl mx-auto px-9 py-6">
-    {{ if title }}
-        <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
-    {{ /if }}
+<div class="max-w-7xl mx-auto px-9 py-6">
+    <div class="flex flex-col lg:flex-row gap-6">
+        {{ if sections.0.images.0 }}
+        <div class="w-full relative lg:max-w-[40%]">
+            <img src="{{ sections.0.images.0.url }}" alt="" class="w-full lg:sticky lg:top-2" style="clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%)">
+        </div>
+        {{ /if }}
 
-    <div class="wysiwyg">
-        {{ content }}
+        <div class="w-full">
+        {{ sections.0 }}
+            <div class="w-full max-w-7xl mx-auto px-9 py-6">
+                {{ if title }}
+                    <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
+                {{ /if }}
+        
+                <div class="wysiwyg">
+                    {{ content }}
+                </div>
+            </div>
+        {{ /sections.0 }}
+        
+        {{ sections offset="1" }}
+            <div class="w-full max-w-7xl mx-auto px-9 py-6">
+                {{ if title }}
+                    <h2 class="text-primary" class="text-2xl">{{ title }}</h2>
+                {{ /if }}
+        
+                <div class="wysiwyg">
+                    {{ content }}
+                </div>
+            </div>
+        {{ /sections }}
+        </div>
     </div>
 </div>
-{{ /sections.0 }}
-
-{{ sections offset="1" }}
-<div class="w-full max-w-7xl mx-auto px-9 py-6">
-    {{ if title }}
-        <h2 class="text-primary" class="text-2xl">{{ title }}</h2>
-    {{ /if }}
-
-    <div class="wysiwyg">
-        {{ content }}
-    </div>
-</div>
-{{ /sections }}

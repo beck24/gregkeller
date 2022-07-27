@@ -35,6 +35,9 @@ sections:
                     always_show_set_button: false
                     previews: true
                     buttons:
+                      - h2
+                      - h3
+                      - h4
                       - bold
                       - underline
                       - italic

@@ -3,7 +3,7 @@ id: 72529e43-2d00-4f3a-a68f-010bf73ddde7
 blueprint: pages
 title: 'Key Issues'
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658707446
+updated_at: 1658906305
 sections:
   -
     title: 'Key Issues'
@@ -16,6 +16,8 @@ sections:
             text: 'While there are many critical issues facing the School District, the following highlights three critical issues facing the School District:'
     type: section
     enabled: true
+    images:
+      - images/key-issues/children-800.jpeg
   -
     title: 'Critical Issue 1: Inadequate funding to ensure student success'
     content:
@@ -100,14 +102,20 @@ sections:
     title: 'Critical Issue 2: The Facilities (Capacity, Aging Facilities and Condition, and Seismic Needs)'
     content:
       -
-        type: paragraph
+        type: heading
+        attrs:
+          level: 4
         content:
           -
             type: text
             marks:
               -
                 type: bold
+              -
+                type: underline
             text: Capacity
+      -
+        type: paragraph
       -
         type: paragraph
         content:
@@ -171,14 +179,20 @@ sections:
               -
                 type: paragraph
       -
-        type: paragraph
+        type: heading
+        attrs:
+          level: 4
         content:
           -
             type: text
             marks:
               -
                 type: bold
+              -
+                type: underline
             text: 'Aging Facilities and Condition'
+      -
+        type: paragraph
       -
         type: paragraph
         content:
@@ -214,7 +228,7 @@ sections:
                 content:
                   -
                     type: text
-                    text: 'Support a focus on the use of District CUPE workers for all maintenance tasks'
+                    text: 'Support a focus on the use of District CUPE workers for all maintenance tasks,'
           -
             type: list_item
             content:
@@ -223,7 +237,7 @@ sections:
                 content:
                   -
                     type: text
-                    text: 'Find ways to fill hard to fill positions with our own work force (i.e., HVAC technicians)'
+                    text: 'Find ways to fill hard to fill positions with our own work force (i.e., HVAC technicians).'
           -
             type: list_item
             content:
@@ -245,14 +259,20 @@ sections:
               -
                 type: paragraph
       -
-        type: paragraph
+        type: heading
+        attrs:
+          level: 4
         content:
           -
             type: text
             marks:
               -
                 type: bold
+              -
+                type: underline
             text: 'Seismic Needs'
+      -
+        type: paragraph
       -
         type: paragraph
         content:
@@ -365,6 +385,6 @@ sections:
                     text: 'Support funding emergency supplies to eliminate the need for local PAC’s to cover the cost of emergency supplies.'
     type: section
     enabled: true
-published: true
 template: templates/pages/key-issues
+published: true
 ---

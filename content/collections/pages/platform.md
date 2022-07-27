@@ -3,7 +3,7 @@ id: 24031fc7-e976-4c1b-a784-bdb653e8d101
 blueprint: pages
 title: Platform
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658706501
+updated_at: 1658906565
 sections:
   -
     title: Platform
@@ -16,6 +16,8 @@ sections:
             text: 'When re-elected, I will be guided by the following principles and goals and will aim to work collaboratively with other Trustees, partners, and stakeholders to achieve the following:'
     type: section
     enabled: true
+    images:
+      - images/platform/student-success-800.png
   -
     title: 'Principle 1: Student Success'
     content:
@@ -117,7 +119,7 @@ sections:
                 content:
                   -
                     type: text
-                    text: 'Advocate and strongly support a new Nanaimo District Secondary School and a replacement for Ladysmith Secondary'
+                    text: 'Advocate and strongly support a new Nanaimo District Secondary School and a replacement for Ladysmith Secondary.'
           -
             type: list_item
             content:
