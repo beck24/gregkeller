@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Meet Greg'
 template: templates/pages/meet-greg
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658704887
+updated_at: 1658906747
 sections:
   -
     title: 'Meet Greg'
@@ -44,4 +44,5 @@ sections:
     type: section
     enabled: true
 published: true
+seo_title: 'Meet Greg - Re-elect Greg Keller'
 ---

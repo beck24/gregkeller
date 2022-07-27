@@ -96,8 +96,9 @@ sections:
             text: 'https://elections.bc.ca/docs/lecfa/guide-to-local-elections-campaign-financing-in-bc-for-candidates-and-their-financial-agents.pdf'
     type: section
     enabled: true
-published: true
 template: templates/pages/donate
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658712376
+updated_at: 1658906845
+published: true
+seo_title: 'Donate - Re-elect Greg Keller'
 ---
