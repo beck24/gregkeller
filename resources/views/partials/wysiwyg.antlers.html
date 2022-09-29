@@ -1,0 +1,7 @@
+{{ if content }}
+<div class="wysiwyg">
+    {{ content }}
+        {{ partial:if_exists :src="'partials/wysiwyg/{type}'" }}
+    {{ /content }}
+</div>
+{{ /if }}

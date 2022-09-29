@@ -5,8 +5,8 @@
     {{ /if }}
 
     <div class="w-full flex flex-col lg:flex-row gap-6 items-center">
-        <div class="w-full wysiwyg">
-            {{ content }}
+        <div class="w-full">
+            {{ partial:partials/wysiwyg :content="content" }}
         </div>
 
         <div class="w-full p-6 rounded-lg bg-white">

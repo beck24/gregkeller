@@ -3,7 +3,7 @@ id: 24031fc7-e976-4c1b-a784-bdb653e8d101
 blueprint: pages
 title: Platform
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658906779
+updated_at: 1664429789
 sections:
   -
     title: Platform
@@ -95,6 +95,14 @@ sections:
                   -
                     type: text
                     text: 'Amend the out-of-catchment enrolment policy to better reflect student needs and provide more certainty and security for students and families.'
+      -
+        type: set
+        attrs:
+          values:
+            type: embed_code
+            embed_code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4FB4zQtFxsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      -
+        type: paragraph
     type: section
     enabled: true
   -
@@ -315,6 +323,6 @@ sections:
     type: section
     enabled: true
 template: templates/pages/platform
-published: true
 seo_title: 'Platform - Re-elect Greg Keller'
+published: true
 ---

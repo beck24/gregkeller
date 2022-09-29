@@ -8,8 +8,8 @@
         <div class="w-full">
             <h2 class="text-secondary text-3xl">{{ title }}</h2>
 
-            <div class="pt-2 wysiwyg">
-                {{ content }}
+            <div class="pt-2">
+                {{ partial:partials/wysiwyg :content="content" }}
             </div>
         </div>
     </div>

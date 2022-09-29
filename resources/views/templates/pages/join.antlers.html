@@ -4,9 +4,7 @@
         <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
     {{ /if }}
 
-    <div class="wysiwyg">
-        {{ content }}
-    </div>
+    {{ partial:partials/wysiwyg :content="content" }}
 </div>
 {{ /sections.0 }}
 

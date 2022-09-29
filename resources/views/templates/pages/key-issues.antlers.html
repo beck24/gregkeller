@@ -13,9 +13,7 @@
                     <h2 class="text-secondary text-3xl lg:text-6xl">{{ title }}</h2>
                 {{ /if }}
 
-                <div class="wysiwyg">
-                    {{ content }}
-                </div>
+                {{ partial:partials/wysiwyg :content="content" }}
             </div>
             {{ /sections.0 }}
 
@@ -29,8 +27,8 @@
                     </button>
                 </h2>
 
-                <div class="wysiwyg" :class="{ hidden: !open }">
-                    {{ content }}
+                <div :class="{ hidden: !open }">
+                    {{ partial:partials/wysiwyg :content="content" }}
                 </div>
             </div>
             {{ /sections }}
