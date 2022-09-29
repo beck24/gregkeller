@@ -3,7 +3,7 @@ id: 72529e43-2d00-4f3a-a68f-010bf73ddde7
 blueprint: pages
 title: 'Key Issues'
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1658906808
+updated_at: 1663775899
 sections:
   -
     title: 'Key Issues'
@@ -337,7 +337,7 @@ sections:
         content:
           -
             type: text
-            text: 'Emergency preparedness is of key importance to student and staff safety. More emphasis, resources, and training need needs to be devoted to ensuring that each school is prepared in the event of a natural disaster. The emergency plans need to be better communicated to parents so that each parent clearly understands the roles and responsibilities of the school district and what to do in the event of a natural disaster. Emergency communications and integration with the municipal emergency programs also needs to be highlighted.'
+            text: 'Emergency preparedness is of key importance to student and staff safety. More emphasis, resources, and training needs to be devoted to ensuring that each school is prepared in the event of a natural disaster. The emergency plans need to be better communicated to parents so that each parent clearly understands the roles and responsibilities of the school district and what to do in the event of a natural disaster. Emergency communications and integration with the municipal emergency programs also needs to be highlighted.'
       -
         type: paragraph
         content:
@@ -386,6 +386,6 @@ sections:
     type: section
     enabled: true
 template: templates/pages/key-issues
-published: true
 seo_title: 'Key Issues - Re-elect Greg Keller'
+published: true
 ---
