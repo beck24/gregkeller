@@ -3,7 +3,7 @@ id: 24031fc7-e976-4c1b-a784-bdb653e8d101
 blueprint: pages
 title: Platform
 updated_by: 4b6a705f-4945-447c-b410-cff4e5a85a86
-updated_at: 1664429789
+updated_at: 1664770829
 sections:
   -
     title: Platform
@@ -164,6 +164,14 @@ sections:
                   -
                     type: text
                     text: 'Advocate and strongly support the creation of barrier-free facilities.'
+      -
+        type: set
+        attrs:
+          values:
+            type: embed_code
+            embed_code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/BY_ncYOEJnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      -
+        type: paragraph
     type: section
     enabled: true
   -
@@ -225,6 +233,14 @@ sections:
                   -
                     type: text
                     text: 'Support the implementation of the Environmental Sustainability Action Plan.'
+      -
+        type: set
+        attrs:
+          values:
+            type: embed_code
+            embed_code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lDgYcvhc8po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      -
+        type: paragraph
     type: section
     enabled: true
   -
@@ -268,6 +284,12 @@ sections:
                   -
                     type: text
                     text: 'Build upon recent achievements by continuing to work on updating policies to improve Board processes and practices.'
+      -
+        type: set
+        attrs:
+          values:
+            type: embed_code
+            embed_code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/y0V90r4Y3Dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     type: section
     enabled: true
   -
@@ -320,6 +342,14 @@ sections:
                   -
                     type: text
                     text: 'Advocate for increased funding for public education.'
+      -
+        type: set
+        attrs:
+          values:
+            type: embed_code
+            embed_code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/FkneKWqkYWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      -
+        type: paragraph
     type: section
     enabled: true
 template: templates/pages/platform
